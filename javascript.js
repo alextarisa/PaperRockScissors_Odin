@@ -18,27 +18,6 @@ function getHumanChoice() {
 }
 
 
-
-function playRound(humanChoice, computerChoice) {
-    humanChoice = humanChoice.toLowerCase();
-    console.log(humanChoice);
-    console.log(computerChoice);
-
-    if ((humanChoice === "rock" && computerChoice === "scissors") 
-        || (humanChoice === "paper" && computerChoice === "rock") 
-        || (humanChoice === "scissors" && computerChoice === "paper")) {
-            console.log("You win! " + humanChoice + " beats " + computerChoice);
-            humanScore++;
-    } else if (humanChoice === computerChoice) {
-        console.log("Draw! Nobody wins!");
-    }
-    else {
-        console.log("You lost! " + computerChoice + " beats "+ humanChoice);
-        computerScore++;
-    }
-  
-}
-
 function playGame() {
     function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.toLowerCase();
